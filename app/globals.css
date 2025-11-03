@@ -1,26 +1,402 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f9fafb;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Nav Links */
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #b28a3a; /* matching Hero gold */
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/background.jpg") center center / 90% auto no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Heading */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Paragraph */
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: #eaeaea;
+}
+
+/* Button */
+.hero-content button {
+  background: #b28a3a;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+  background: #d6a74a;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-content button {
+    padding: 12px 25px;
+  }
+}
+
+/* ---------- ABOUT SECTION (Law Firm with Image) ---------- */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px;
+  background: linear-gradient(135deg, #f9f8f6, #f3f1ed);
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 550px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #b28a3a; /* hero gold */
+  font-family: "Georgia", serif;
+}
+
+.about-text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #4b5563;
+}
+
+.about-text button {
+  background: #b28a3a; /* hero gold */
+  color: white;
+  border: none;
+  padding: 16px 36px; /* bigger padding */
+  font-size: 1.05rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(178, 138, 58, 0.4);
+}
+
+.about-text button:hover {
+  background: #d6a74a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(178, 138, 58, 0.5);
+}
+
+.about-image {
+  flex: 1;
+  max-width: 550px;
+  height: auto;
+}
+
+.rounded-image {
+  width: 100%;
+  height: 350px; /* slightly taller */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 40px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-text button {
+    padding: 14px 30px;
+  }
+}
+
+
+/* ---------- TEAM / PARTNERS SECTION ---------- */
+/* ---------- TEAM SECTION ---------- */
+.team-section {
+  padding: 100px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  color: #b28a3a; /* law firm gold */
+  font-family: "Georgia", serif;
+  font-weight: 700;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  gap: 40px;
+  justify-items: center;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.team-img-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* square container */
+  position: relative;
+}
+
+.team-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* center face */
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 20px;
+}
+
+.team-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 700;
+}
+
+.team-info p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.team-more {
+  text-decoration: none;
+  color: #b28a3a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.team-more:hover {
+  color: #965f1b;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+  .team-section {
+    padding: 80px 10px;
+  }
+  .team-title {
+    font-size: 2.4rem;
+  }
 }

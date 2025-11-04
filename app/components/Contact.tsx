@@ -20,19 +20,19 @@ export default function Contact() {
           <div className="contact-details">
             <div className="detail">
               <MapPin size={20} />
-              <span>Suite 14, Justice Plaza, Yola, Nigeria</span>
+              <span>Jimeta, Yola, Nigeria</span>
             </div>
             <div className="detail">
               <Phone size={20} />
-              <span>+234 801 234 5678</span>
+              <span>0806 652 2508</span>
             </div>
           </div>
 
           <div className="social-icons">
             <a href="https://web.facebook.com/people/Gabriel-Adikwu-Company-Elo-Heem-Chambers/100054495847594/?_rdc=1&_rdr#" aria-label="Facebook"><Facebook /></a>
-            <a href="https://twitter.com/" aria-label="Twitter"><Twitter /></a>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><Linkedin /></a>
-            <a href="https://www.instagram.com/" aria-label="Instagram"><Instagram /></a>
+            {/* <a href="https://twitter.com/" aria-label="Twitter"><Twitter /></a> */}
+            <a href="https://www.linkedin.com/in/Gabriel%20Christopher%20Adikwu?fbclid=IwY2xjawN2vMVleHRuA2FlbQIxMABicmlkETFiZWI4MUt3b2JxcWtZOFQ3AR4oKgJAd1lSX60uRsSdEccPX5ovyeWNQxqrCVlecD9NjlKyz7rks_630cxWaA_aem_ZPGGK9TstJWTl2fuUxY-Yw" aria-label="LinkedIn"><Linkedin /></a>
+         {/*    <a href="https://www.instagram.com/" aria-label="Instagram"><Instagram /></a> */}
           </div>
         </motion.div>
 

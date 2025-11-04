@@ -135,7 +135,7 @@ html {
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.4)
     ),
-    url("/background.jpg") center center / 90% auto no-repeat;
+    url("/chamber.jpg") center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -554,5 +554,236 @@ html {
 
   .social-icons {
     justify-content: center;
+  }
+}
+
+
+/* ---------- EVENTS SECTION ---------- */
+.events-section {
+  padding: 100px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.events-title {
+  font-size: 2.8rem;
+  color: #b28a3a;
+  margin-bottom: 60px;
+  font-family: "Georgia", serif;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.event-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 340px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.event-img {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.event-content h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.event-date {
+  font-size: 0.95rem;
+  color: #b28a3a;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.event-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .events-section {
+    padding: 80px 10px;
+  }
+  .events-title {
+    font-size: 2.4rem;
+  }
+}
+
+
+/* ---------- GALLERY SECTION ---------- */
+.gallery-section {
+  padding: 5rem 2rem;
+  background: #fafafa;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gallery-title {
+  font-family: "Georgia", serif;
+  font-size: 2.8rem;
+  color: #b28a3a; /* your gold colour */
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-more {
+  margin-top: 2.5rem;
+}
+
+.gallery-link {
+  display: inline-block;
+  background: #b28a3a; /* your deep navy colour */
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-link:hover {
+  background: #d6a74a;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 3.5rem 1rem;
+  }
+  .gallery-title {
+    font-size: 2.2rem;
+  }
+  .gallery-img {
+    height: 160px;
+  }
+}
+
+
+/* ---------- FOOTER SECTION ---------- */
+.footer {
+  color: #111;
+  text-align: center;
+  padding: 35px 20px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  cursor: default;
+}
+
+.built-by {
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.built-by:hover {
+  color: #b28a3a;
+}
+.built-by a {
+  text-decoration: none;
+  color: inherit;
+}
+.built-by span {
+  font-weight: 600;
+  color: #b28a3a;
+  transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.built-by span:hover {
+  color: #d6a74a;
+  transform: scale(1.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .footer {
+    padding: 25px 15px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .built-by {
+    font-size: 0.85rem;
   }
 }

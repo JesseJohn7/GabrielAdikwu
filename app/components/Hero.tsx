@@ -15,7 +15,7 @@ export default function Hero() {
         >
           <h1>Justice. Integrity. Excellence.</h1>
           <p>
-            At Lex & Partners, we provide trusted legal guidance and
+            At Gabriel Adikwu & Co, we provide trusted legal guidance and
             representation tailored to your needs.
           </p>
           <button>

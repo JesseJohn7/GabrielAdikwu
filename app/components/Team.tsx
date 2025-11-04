@@ -10,7 +10,7 @@ interface Member {
 }
 
 const teamMembers: Member[] = [
-  { name: "Gabriel Adikwu", role: "Lord Advocate", image: "/adikwu.jpg" },
+  { name: "Gabriel Adikwu", role: "Principal Attorney", image: "/adikwu.jpg" },
   { name: "Oladiran Ridwan Mayokun", role: "Deputy Lord Advocate", image: "/team2.jpg" },
   { name: "Okandeji Nafisat Omodasola", role: "General Secretary", image: "/team3.jpg" },
   { name: "Oluwabukunmi Olanipekun", role: "Assistant General Secretary", image: "/team4.jpg" },

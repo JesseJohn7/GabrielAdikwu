@@ -32,12 +32,19 @@ export default function About() {
           and representation.
         </motion.p>
         <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          Contact Us
-        </motion.button>
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        onClick={() => {
+          const contactSection = document.getElementById("contact");
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }}
+      >
+        Contact Us
+      </motion.button>
+
       </motion.div>
 
       {/* Image side animation */}

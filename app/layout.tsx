@@ -2,8 +2,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "Faith Meets Focus",
-  description: "Build consistency, grow spiritually, and stay inspired.",
+  title: "Gabriel Adikwu & Co.",
+  description: "Solve cases.",
 };
 
 export default function RootLayout({

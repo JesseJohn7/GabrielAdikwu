@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-overlay">
         <motion.div
           className="hero-content"

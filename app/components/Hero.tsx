@@ -13,14 +13,16 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <h1>Justice. Integrity. Excellence.</h1>
+          <h1>Gabriel Adikwu & Co. (Elo-Heem Chambers) </h1>
           <p>
-            At Gabriel Adikwu & Co, we provide trusted legal guidance and
-            representation tailored to your needs.
+            At Gabriel Adikwu & Co. We uphold a legacy of integrity, excellence, and trusted legal representation for individuals and businesses alike.
           </p>
+          <a href="#contact">
           <button>
-            Book Consultation <ArrowRight size={18} />
+              Book Consultation
+            <ArrowRight size={18} />
           </button>
+          </a>
         </motion.div>
       </div>
     </section>

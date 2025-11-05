@@ -143,13 +143,18 @@ html {
   padding: 0 20px;
 }
 
+.hero a {
+  text-decoration: none;
+  color: white;
+}
+
 .hero-overlay {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   color: white;
 }
 
@@ -685,8 +690,9 @@ html {
 
 .gallery-img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -716,13 +722,35 @@ html {
   .gallery-section {
     padding: 3.5rem 1rem;
   }
+
   .gallery-title {
     font-size: 2.2rem;
   }
+
+  /* ✅ FIX: No white spaces + clean full display */
   .gallery-img {
-    height: 160px;
+    width: 100%;
+    height: 180px;          /* consistent height */
+    object-fit: cover;      /* fills container nicely */
+    object-position: center;
+    display: block;
+    background-color: transparent; /* remove white space */
+  }
+
+  /* ✅ container should match the image */
+  .gallery-item {
+    padding: 0;             /* removed padding (caused white gap) */
+    border-radius: 10px;
+    overflow: hidden;       /* keeps image clean */
+  }
+
+  /* ✅ tighter and consistent grid */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row for balance */
+    gap: 0.8rem;
   }
 }
+
 
 
 /* ---------- FOOTER SECTION ---------- */

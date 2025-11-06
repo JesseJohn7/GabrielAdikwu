@@ -26,7 +26,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Gabriel Adikwu & Co is a trusted law firm with over 2 years of experience
+          Gabriel Adikwu & Co is a trusted law firm with over 5 years of experience
           providing top-notch legal services. Our team specializes in corporate,
           civil, and criminal law, ensuring our clients receive expert guidance
           and representation.

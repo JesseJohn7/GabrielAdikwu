@@ -8,7 +8,7 @@ const galleryImages = [
   { src: "/pic1.jpg", alt: "Gallery Image 1" },
   { src: "/pic2.jpg", alt: "Gallery Image 2" },
   { src: "/pic3.jpg", alt: "Gallery Image 3" },
-  { src: "/pic4.jpg", alt: "Gallery Image 4" },
+  { src: "/pic9.jpg", alt: "Gallery Image 4" },
   { src: "/pic5.jpg", alt: "Gallery Image 5" },
   { src: "/pic6.jpg", alt: "Gallery Image 6" },
   { src: "/pic7.jpg", alt: "Gallery Image 7" },

@@ -12,7 +12,7 @@ const events = [
   },
   {
     title: "Gabriel Adikwu & Co Annual Lecture 2024",
-    date: "27 Aril, 2024",
+    date: "27 April, 2024",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/event2.jpg",

@@ -335,6 +335,130 @@ html {
 }
 
 
+/* ===== Vision & Mission Section ===== */
+.vision-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom right, #fdfdfd, #f7f5f2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.vision-section h2 {
+  font-size: 2.4rem;
+  color: #b28a3a;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.vision-section h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #b28a3a;
+  display: block;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* ===== Cards Grid ===== */
+.vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* ===== Individual Card ===== */
+.vision-card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 2.2rem 1.8rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.07);
+}
+
+.icon-wrapper {
+  background: #f9f6ef;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.vision-card h3 {
+  font-size: 1.3rem;
+  color: #b28a3a;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-family: "Georgia", serif;
+}
+
+.vision-card p {
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 992px) {
+  .vision-section h2 {
+    font-size: 2.1rem;
+  }
+  .vision-card p {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .vision-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .vision-grid {
+    gap: 1.5rem;
+  }
+
+  .vision-card {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .vision-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .vision-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
 /* ---------- TEAM / PARTNERS SECTION ---------- */
 /* ---------- TEAM SECTION ---------- */
 .team-section {

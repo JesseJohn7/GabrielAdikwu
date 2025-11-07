@@ -12,7 +12,7 @@ const Navbar = () => {
   // Track which section is currently visible
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "team" , "events", "gallery" ,"contact"];
+      const sections = ["home", "about","vision", "team" , "events", "gallery" ,"contact"];
       sections.forEach((id) => {
         const el = document.getElementById(id);
         if (el) {
@@ -31,6 +31,7 @@ const Navbar = () => {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
+    { id: "vision", label: "Vision" },
     { id: "team", label: "Team" },
     { id: "events", label: "Events" },
     { id: "gallery", label: "Gallery" },

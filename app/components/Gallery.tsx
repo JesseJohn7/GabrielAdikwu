@@ -10,9 +10,9 @@ const galleryImages = [
   { src: "/pic3.jpg", alt: "Gallery Image 3" },
   { src: "/pic9.jpg", alt: "Gallery Image 4" },
   { src: "/pic5.jpg", alt: "Gallery Image 5" },
-  { src: "/pic6.jpg", alt: "Gallery Image 6" },
+  { src: "/pic11.jpg", alt: "Gallery Image 6" },
   { src: "/pic7.jpg", alt: "Gallery Image 7" },
-  { src: "/pic8.jpg", alt: "Gallery Image 8" },
+  { src: "/pic10.jpg", alt: "Gallery Image 8" },
 ];
 
 export default function Gallery() {

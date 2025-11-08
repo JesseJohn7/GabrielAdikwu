@@ -2,23 +2,57 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface Member {
   name: string;
   role: string;
   image: string;
+  bio: string;
 }
 
 const teamMembers: Member[] = [
-  { name: "Gabriel Adikwu", role: "Principal Attorney", image: "/adikwupict.jpg" },
-  { name: "Oladiran Ridwan Mayokun", role: "Deputy Lord Advocate", image: "/team2.jpg" },
-  { name: "Okandeji Nafisat Omodasola", role: "General Secretary", image: "/team3.jpg" },
-  { name: "Oluwabukunmi Olanipekun", role: "Assistant General Secretary", image: "/team4.jpg" },
-  { name: "Adebayo Femi", role: "Corporate Lawyer", image: "/team5.jpg" },
-  { name: "Temitope Akin", role: "Litigation Lawyer", image: "/team6.jpg" },
+  {
+    name: "Gabriel Adikwu",
+    role: "Principal Attorney",
+    image: "/adikwupict.jpg",
+    bio: "Gabriel Adikwu is a seasoned attorney with over a decade of experience in corporate law, litigation, and legal advisory. He leads the firm with passion and integrity.",
+  },
+  {
+    name: "Oladiran Ridwan Mayokun",
+    role: "Deputy Lord Advocate",
+    image: "/team2.jpg",
+    bio: "Ridwan specializes in legal research and case preparation. He supports the principal attorney in handling complex cases and delivering justice efficiently.",
+  },
+  {
+    name: "Okandeji Nafisat Omodasola",
+    role: "General Secretary",
+    image: "/team3.jpg",
+    bio: "Nafisat ensures the smooth administrative operations of the firm. She manages correspondence, meetings, and maintains professionalism at all times.",
+  },
+  {
+    name: "Oluwabukunmi Olanipekun",
+    role: "Assistant General Secretary",
+    image: "/team4.jpg",
+    bio: "Oluwabukunmi assists in firm documentation, handles client interactions, and ensures timely delivery of internal communications.",
+  },
+  {
+    name: "Adebayo Femi",
+    role: "Corporate Lawyer",
+    image: "/team5.jpg",
+    bio: "Adebayo is an expert in corporate governance, mergers, and compliance. He helps clients navigate business laws with confidence.",
+  },
+  {
+    name: "Temitope Akin",
+    role: "Litigation Lawyer",
+    image: "/team6.jpg",
+    bio: "Temitope represents clients in litigation matters and is known for her persuasive courtroom presence and dedication to justice.",
+  },
 ];
 
 export default function Team() {
+  const [selectedMember, setSelectedMember] = useState<Member | null>(null);
+
   return (
     <section id="team" className="team-section">
       <motion.h2
@@ -41,11 +75,7 @@ export default function Team() {
             transition={{ delay: i * 0.15, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <motion.div
-              className="team-img-wrapper"
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.4 }}
-            >
+            <div className="team-img-wrapper">
               <Image
                 src={m.image}
                 alt={m.name}
@@ -53,20 +83,43 @@ export default function Team() {
                 height={300}
                 className="team-img"
               />
-            </motion.div>
-
-            <motion.div
-              className="team-info"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: i * 0.25 + 0.3 }}
-            >
+            </div>
+            <div className="team-info">
               <h3>{m.name}</h3>
               <p>{m.role}</p>
-            </motion.div>
+              <button
+                className="see-more-btn"
+                onClick={() => setSelectedMember(m)}
+              >
+                See More
+              </button>
+            </div>
           </motion.div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedMember && (
+        <div className="modal-overlay" onClick={() => setSelectedMember(null)}>
+          <motion.div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <h2>{selectedMember.name}</h2>
+            <p className="role">{selectedMember.role}</p>
+            <p className="bio">{selectedMember.bio}</p>
+            <button
+              className="close-btn"
+              onClick={() => setSelectedMember(null)}
+            >
+              Close
+            </button>
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }

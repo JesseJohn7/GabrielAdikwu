@@ -16,7 +16,8 @@ const teamMembers: Member[] = [
     name: "Gabriel Adikwu",
     role: "Principal Attorney",
     image: "/adikwupict.jpg",
-    bio: "Gabriel Adikwu is a seasoned attorney with over a decade of experience in corporate law, litigation, and legal advisory. He leads the firm with passion and integrity.",
+    bio: "Mr. Adikwu is a distinguished legal mind known for reshaping precedent and advancing Nigerian law through sound reasoning and integrity. Guided by the belief that law is philosophy in action, he approaches every case with fairness, depth, and purpose. A committed advocate for justice, he actively contributes to the Nigerian Bar Association and its committees on business law, consumer protection, and governance.",
+
   },
   {
     name: "Oladiran Ridwan Mayokun",

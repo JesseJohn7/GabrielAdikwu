@@ -27,6 +27,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   const navItems = [
     { id: "home", label: "Home" },

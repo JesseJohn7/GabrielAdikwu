@@ -13,6 +13,10 @@ const galleryImages = [
   { src: "/pic11.jpg", alt: "Gallery Image 6" },
   { src: "/pic7.jpg", alt: "Gallery Image 7" },
   { src: "/pic10.jpg", alt: "Gallery Image 8" },
+  { src: "/pic13.jpg", alt: "Gallery Image 9" },
+  { src: "/pic12.jpg", alt: "Gallery Image 10" },
+  { src: "/pic14.jpg", alt: "Gallery Image 11" },
+  { src: "/pic15.jpg", alt: "Gallery Image 12" },
 ];
 
 export default function Gallery() {

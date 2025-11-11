@@ -13,16 +13,16 @@ interface Member {
 
 const teamMembers: Member[] = [
   {
-    name: "Gabriel Adikwu",
+    name: "Barr Gabriel Adikwu",
     role: "Principal Attorney",
     image: "/adikwupict.jpg",
     bio: "Mr. Adikwu is a distinguished legal mind known for reshaping precedent and advancing Nigerian law through sound reasoning and integrity. Guided by the belief that law is philosophy in action, he approaches every case with fairness, depth, and purpose. A committed advocate for justice, he actively contributes to the Nigerian Bar Association and its committees on business law, consumer protection, and governance.",
 
   },
   {
-    name: "Oladiran Ridwan Mayokun",
-    role: "Deputy Lord Advocate",
-    image: "/team2.jpg",
+    name: "Esq. Mercy Richard",
+    role: "Head of Chamber",
+    image: "/barrmercy.jpg",
     bio: "Ridwan specializes in legal research and case preparation. He supports the principal attorney in handling complex cases and delivering justice efficiently.",
   },
   {

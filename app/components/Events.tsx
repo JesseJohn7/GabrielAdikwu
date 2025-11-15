@@ -24,6 +24,34 @@ const events = [
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/event3.jpg",
   },
+    {
+    title: "Gabriel Adikwu & Co Annual Lecture 2023",
+    date: "June 8, 2022",
+    description:
+      "A gathering of top legal minds discussing justice reform, technology, and policy",
+    image: "/2022.jpg",
+  },
+    {
+    title: "Gabriel Adikwu & Co Annual Lecture 2023",
+    date: "June 8, 2021",
+    description:
+      "A gathering of top legal minds discussing justice reform, technology, and policy",
+    image: "/2021.jpg",
+  },
+    {
+    title: "Gabriel Adikwu & Co Annual Lecture 2023",
+    date: "June 8, 2020",
+    description:
+      "A gathering of top legal minds discussing justice reform, technology, and policy",
+    image: "/2020.jpg",
+  },
+    {
+    title: "Gabriel Adikwu & Co Annual Lecture 2023",
+    date: "June 8, 2019",
+    description:
+      "A gathering of top legal minds discussing justice reform, technology, and policy",
+    image: "/2019.jpg",
+  },
 ];
 
 export default function Events() {

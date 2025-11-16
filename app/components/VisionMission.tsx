@@ -18,11 +18,6 @@ export default function VisionMission() {
       text: "To build and uphold a legal practice geared towards the promotion of justice and the rule of law, entrenched in excellence, integrity, and outstanding service delivery. We aim to provide a strong voice for the downtrodden and ensure that every individual, regardless of status, has access to quality legal representation.",
     },
     {
-      title: "Our Mission",
-      icon: <Target size={36} className="text-[#b28a3a]" />,
-      text: "Our mission is to deliver exceptional legal services founded on professionalism, empathy, and innovation. We are committed to protecting the rights of our clients, advancing justice, and setting a standard of ethical excellence in every case we handle.",
-    },
-    {
       title: "Our Vision",
       icon: <Globe size={36} className="text-[#b28a3a]" />,
       text: "To be a leading law firm recognized locally and internationally for promoting justice, integrity, and social equity—empowering individuals, businesses, and communities through sound legal counsel and unwavering commitment to the rule of law.",

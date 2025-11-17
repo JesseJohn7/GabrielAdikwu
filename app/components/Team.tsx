@@ -23,7 +23,7 @@ const teamMembers: Member[] = [
     name: "Esq. Mercy Richard",
     role: "Head of Chamber",
     image: "/barrmercy.jpg",
-    bio: "Ridwan specializes in legal research and case preparation. He supports the principal attorney in handling complex cases and delivering justice efficiently.",
+    bio: "Mercy Richard was born in Adamawa State and indigene of Kogi state is a graduate with honours from the prestigious university of Jos LLB (Honours),Who obtained her BL from the nigerian law school and called to the nigerian Bar a practicing lawyer.Who is a Human Right Activist , child rights advocate ,Public speaker and arbitrator and mediator with specialization cutting across estate and property law , family law , corporate and commercial law practice and particularly Litigation . An Active member of the Nigerian Bar Asssociation FIDA,Yola Branch.Her Hobbies are singing , playing games , dancing and listening to music ",
   },
   {
     name: "Okandeji Nafisat Omodasola",

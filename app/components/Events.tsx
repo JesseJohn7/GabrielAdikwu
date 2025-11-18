@@ -5,49 +5,49 @@ import { motion } from "framer-motion";
 const events = [
   {
     title: "Gabriel Adikwu & Co Annual Lecture 2025",
-    date: "17 May, 2025",
+    date: "17th May, 2025",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy.",
     image: "/event1.jpg",
   },
   {
     title: "Gabriel Adikwu & Co Annual Lecture 2024",
-    date: "27 April, 2024",
+    date: "27th April, 2024",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/event2.jpg",
   },
   {
     title: "Gabriel Adikwu & Co Annual Lecture 2023",
-    date: "June 8, 2023",
+    date: "8th July, 2023",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/event3.jpg",
   },
     {
-    title: "Gabriel Adikwu & Co Annual Lecture 2023",
-    date: "June 8, 2022",
+    title: "Gabriel Adikwu & Co Annual Lecture 2022",
+    date: "26th March, 2022",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2022.jpg",
   },
     {
-    title: "Gabriel Adikwu & Co Annual Lecture 2023",
-    date: "June 8, 2021",
+    title: "Gabriel Adikwu & Co Annual Lecture 2021",
+    date: "10th April, 2021",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2021.jpg",
   },
     {
-    title: "Gabriel Adikwu & Co Annual Lecture 2023",
-    date: "June 8, 2020",
+    title: "Gabriel Adikwu & Co Annual Lecture 2020",
+    date: "13 June, 2020",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2020.jpg",
   },
     {
-    title: "Gabriel Adikwu & Co Annual Lecture 2023",
-    date: "June 8, 2019",
+    title: "Gabriel Adikwu & Co Annual Lecture 2019",
+    date: "2nd July, 2019",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2019.jpg",

@@ -20,15 +20,15 @@ const teamMembers: Member[] = [
 
   },
   {
-    name: "Esq. Mercy Richard",
+    name: "Esq Mercy Richard",
     role: "Head of Chamber",
     image: "/barrmercy.jpg",
     bio: "Mercy Richard was born in Adamawa State and indigene of Kogi state is a graduate with honours from the prestigious university of Jos LLB (Honours),Who obtained her BL from the nigerian law school and called to the nigerian Bar a practicing lawyer.Who is a Human Right Activist , child rights advocate ,Public speaker and arbitrator and mediator with specialization cutting across estate and property law , family law , corporate and commercial law practice and particularly Litigation . An Active member of the Nigerian Bar Asssociation FIDA,Yola Branch.Her Hobbies are singing , playing games , dancing and listening to music ",
   },
   {
-    name: "Okandeji Nafisat Omodasola",
-    role: "General Secretary",
-    image: "/team3.jpg",
+    name: "Esq M.M Fattim",
+    role: "Legal Advocate",
+    image: "/fattim.jpg",
     bio: "Nafisat ensures the smooth administrative operations of the firm. She manages correspondence, meetings, and maintains professionalism at all times.",
   },
   /* {
@@ -44,7 +44,7 @@ const teamMembers: Member[] = [
     bio: "Adebayo is an expert in corporate governance, mergers, and compliance. He helps clients navigate business laws with confidence.",
   },
   {
-    name: "Temitope Akin",
+    name: "M.M Fattim",
     role: "Litigation Lawyer",
     image: "/team6.jpg",
     bio: "Temitope represents clients in litigation matters and is known for her persuasive courtroom presence and dedication to justice.",

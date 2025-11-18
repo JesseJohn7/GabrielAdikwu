@@ -31,7 +31,7 @@ const teamMembers: Member[] = [
     image: "/team3.jpg",
     bio: "Nafisat ensures the smooth administrative operations of the firm. She manages correspondence, meetings, and maintains professionalism at all times.",
   },
-  {
+  /* {
     name: "Oluwabukunmi Olanipekun",
     role: "Assistant General Secretary",
     image: "/team4.jpg",
@@ -48,7 +48,7 @@ const teamMembers: Member[] = [
     role: "Litigation Lawyer",
     image: "/team6.jpg",
     bio: "Temitope represents clients in litigation matters and is known for her persuasive courtroom presence and dedication to justice.",
-  },
+  }, */
 ];
 
 export default function Team() {

@@ -16,20 +16,20 @@ const teamMembers: Member[] = [
     name: "Barr Gabriel Adikwu",
     role: "Principal Attorney",
     image: "/adikwupict.jpg",
-    bio: "Mr. Adikwu is a distinguished legal mind known for reshaping precedent and advancing Nigerian law through sound reasoning and integrity. Guided by the belief that law is philosophy in action, he approaches every case with fairness, depth, and purpose. A committed advocate for justice, he actively contributes to the Nigerian Bar Association and its committees on business law, consumer protection, and governance.",
+    bio: "Gabriel Adikwu is a lawyer whose career has evolved like a finely woven mosaic,stitched together by rigorous intellect,relentless advocacy and a vision that law,when rightly applied is a profession and a form of civic advocacy.For close to two decades from his call to the Nigerian Bar in 2008 and notarary public in 10 December in 2024 ,Adikwu has journeyed through a series of litigation , commercial arbitration and constitutional disputes. From courtrooms across various states of the federation and the Federal Capital Territory (FCT) to the august halls of the Court of Appeal and the Supreme Court of Nigeria his story is not simply that of a lawyer winnning cases but the story of a man steadily proven that the law is a technical instrument of society and an eternal dialogue between power and justice ",
 
   },
   {
     name: "Esq Mercy Richard",
     role: "Head of Chamber",
     image: "/barrmercy.jpg",
-    bio: "Mercy Richard was born in Adamawa State and indigene of Kogi state is a graduate with honours from the prestigious university of Jos LLB (Honours),Who obtained her BL from the nigerian law school and called to the nigerian Bar a practicing lawyer.Who is a Human Right Activist , child rights advocate ,Public speaker and arbitrator and mediator with specialization cutting across estate and property law , family law , corporate and commercial law practice and particularly Litigation . An Active member of the Nigerian Bar Asssociation FIDA,Yola Branch.Her Hobbies are singing , playing games , dancing and listening to music ",
+    bio: "Mercy Richard  is a graduate with honours from the prestigious university of Jos LLB (Honours),Who obtained her BL from the nigerian law school and called to the nigerian Bar a practicing lawyer.Who is a Human Right Activist , child rights advocate ,Public speaker and arbitrator and mediator with specialization cutting across estate and property law , family law , corporate and commercial law practice and particularly Litigation . An Active member of the Nigerian Bar Asssociation FIDA,Yola Branch.",
   },
   {
     name: "Esq M.M Fattim",
     role: "Legal Advocate",
     image: "/fattim.jpg",
-    bio: "Nafisat ensures the smooth administrative operations of the firm. She manages correspondence, meetings, and maintains professionalism at all times.",
+    bio: "Barr Miri Mercy Fattim is a young enthusiatic and resourceful legal practicioner called to the Nigerian Bar in 2025. She holds a Bachelor of Laws (LL.B) degree from Near East University (Cyprus), a Master of Laws (LLM) in international Law , a member of the international Law  , a member of international Law Association (ILA) an associate of the institute of chartered mediators and concilators (AICMC) amd completed her professional training at the Nigerian Law School. Currently serving under the National Youth Service Corps (NYSC) she exemplifies diligence and strong commitment to Legal excellence. Her professional interests span across Litigation,Property Law ,International Commercial Law,International disputes settlement ,Arbitration and Maritime Law,with sound theoritical and field proficency .she exbits immense ability to perform Emperical Research and give practical suggestions reflecting a deep curiosity and progressive outlook towards emerging areas of law.",
   },
   /* {
     name: "Oluwabukunmi Olanipekun",

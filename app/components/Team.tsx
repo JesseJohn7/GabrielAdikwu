@@ -23,7 +23,7 @@ const teamMembers: Member[] = [
     name: "Esq Mercy Richard",
     role: "Head of Chamber",
     image: "/barrmercy.jpg",
-    bio: "Mercy Richard is a graduate with honours from the prestigious University of Jos (LLB, Honours). She obtained her BL from the Nigerian Law School and was called to the Nigerian Bar in 2020. She is a practicing lawyer, human rights activist, child rights advocate, public speaker, and arbitrator and mediator, with specialization across estate and property law, family law, corporate and commercial law, and particularly litigation. She is an active member of the Nigerian Bar Association (NBA) and FIDA, Yola Branch.",
+    bio: "Mercy Richard is a distinguished graduate with honours from the prestigious University of Jos (LLB, Honours). She obtained her BL from the Nigerian Law School and was called to the Nigerian Bar in 2022. She is a practicing lawyer with extensive expertise in estate and property law, family law, corporate and commercial law, with a particular focus on litigation. Beyond her legal practice, Mercy is a passionate human rights activist and child rights advocate, committed to promoting justice and protecting the vulnerable. She is also an accomplished public speaker, arbitrator, and mediator, bringing professionalism and insight to every engagement. Mercy is an active member of the Nigerian Bar Association (NBA) and FIDA, Yola Branch, contributing significantly to the advancement of legal practice and the promotion of ethical standards within the profession.",
   },
   {
     name: "Esq M.M Fattim",

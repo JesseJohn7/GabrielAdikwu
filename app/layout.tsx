@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "Gabriel Adikwu & Co. — Principal Attorneys in Nigeria",
+  title: "Gabriel Adikwu & Co. —Principal Attorneys in Nigeria",
   description:
     "Gabriel Adikwu & Co. is a distinguished law firm offering expert legal solutions, advocacy, and consultation services across Nigeria.",
   keywords: [
@@ -16,7 +16,7 @@ export const metadata = {
   ],
   authors: [{ name: "Gabriel Adikwu & Co." }],
   openGraph: {
-    title: "Gabriel Adikwu & Co. — Expert Legal Solutions",
+    title: "Gabriel Adikwu & Co. Expert Legal Solutions",
     description:
       "Professional legal representation and consultation across Nigeria.",
     url: "https://gabriel-adikwu.vercel.app",

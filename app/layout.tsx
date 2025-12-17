@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "Gabriel Adikwu & Co. —Principal Attorneys in Nigeria",
+  title: "Gabriel Adikwu & Co.Principal Attorneys in Nigeria",
   description:
     "Gabriel Adikwu & Co. is a distinguished law firm offering expert legal solutions, advocacy, and consultation services across Nigeria.",
   keywords: [

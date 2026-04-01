@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
           <a href="#contact">
           <button>
-              Book Consultation
+              Book Consultations
             <ArrowRight size={18} />
           </button>
           </a>

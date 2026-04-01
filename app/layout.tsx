@@ -15,6 +15,11 @@ export const metadata = {
     "Corporate law",
   ],
   authors: [{ name: "Gabriel Adikwu & Co." }],
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     title: "Gabriel Adikwu & Co. Expert Legal Solutions",
     description:
@@ -23,7 +28,7 @@ export const metadata = {
     siteName: "Gabriel Adikwu & Co.",
     images: [
       {
-        url: "/logo.jpg", // replace with your actual image in /public
+        url: "/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Gabriel Adikwu & Co.",
@@ -37,8 +42,8 @@ export const metadata = {
     title: "Gabriel Adikwu & Co.",
     description:
       "Expert legal services and professional representation in Nigeria.",
-    creator: "@gabrieladikwu", // replace with your X handle if available
-    images: ["/logo.jpg"], // replace with your actual image in /public
+    creator: "@gabrieladikwu",
+    images: ["/logo.jpg"],
   },
   alternates: {
     canonical: "https://gabriel-adikwu.vercel.app",
@@ -58,7 +63,7 @@ export default function RootLayout({
           content="GR5f_pq347SCVKI43cRiAIoZf8O5OLiM6lU3iWuN-tE"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpg" type="image/jpeg" />
       </head>
       <body>
         <Navbar />

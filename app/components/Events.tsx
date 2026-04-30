@@ -4,6 +4,15 @@ import { motion } from "framer-motion";
 
 const events = [
   {
+    title: "Gabriel Adikwu & Co Annual Lecture 2026",
+    date: "16th May, 2026 · 9:00 AM",
+    description:
+      "A gathering of top legal minds discussing justice reform, technology, and policy.",
+    image: "/2026.jpg",
+    rsvpLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfPl00W_JBrijyvueu0_-DwW8nDP4V71vkLK5bLnVhpxrKT1g/viewform?fbzx=-114406342102292908",
+  },
+  {
     title: "Gabriel Adikwu & Co Annual Lecture 2025",
     date: "17th May, 2025",
     description:
@@ -24,28 +33,28 @@ const events = [
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/event3.jpg",
   },
-    {
+  {
     title: "Gabriel Adikwu & Co Annual Lecture 2022",
     date: "26th March, 2022",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2022.jpg",
   },
-    {
+  {
     title: "Gabriel Adikwu & Co Annual Lecture 2021",
     date: "10th April, 2021",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2021.jpg",
   },
-    {
+  {
     title: "Gabriel Adikwu & Co Annual Lecture 2020",
     date: "13 June, 2020",
     description:
       "A gathering of top legal minds discussing justice reform, technology, and policy",
     image: "/2020.jpg",
   },
-    {
+  {
     title: "Gabriel Adikwu & Co Annual Lecture 2019",
     date: "2nd July, 2019",
     description:
@@ -77,14 +86,26 @@ export default function Events() {
             transition={{ delay: i * 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div
-              className="event-img"
-              style={{ backgroundImage: `url(${event.image})` }}
-            ></div>
+            <div className="event-img-wrapper">
+              <div
+                className="event-img"
+                style={{ backgroundImage: `url(${event.image})` }}
+              />
+            </div>
             <div className="event-content">
               <h3>{event.title}</h3>
               <p className="event-date">{event.date}</p>
               <p>{event.description}</p>
+              {event.rsvpLink && (
+                
+                  <a href={event.rsvpLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="event-rsvp-btn"
+                >
+                  RSVP Now
+                </a>
+              )}
             </div>
           </motion.div>
         ))}
